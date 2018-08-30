@@ -1,8 +1,8 @@
 ## adlink-ros2-example-customized-msg-srv
-platform: ROS 2.0 Ardent Apalone (deb-20180328-)
-Build tool: colcon build
-DDS:   ADLINK OpenSplice 
-RMW_IMPLEMENTATION: rmw_opensplice_cpp
+* platform: ROS 2.0 Ardent Apalone (deb-20180328-)
+* Build tool: colcon build
+* DDS:   ADLINK OpenSplice 
+* RMW_IMPLEMENTATION: rmw_opensplice_cpp
 
 
 This example shows how to create customized msg/srv based on the ROS 2 existing examples. Several bugs and issues are corrected due to the change of build tool of ROS 2. 
