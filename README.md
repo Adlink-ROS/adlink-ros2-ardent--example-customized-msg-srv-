@@ -18,13 +18,13 @@ rosidl_tutorials:     include the programs and a customzied message
 			srv_server.cpp
 
 build and source:
-	1. cd rosidl_tutorials_msgs
-	2. colcon build
-	3. source install/setup.bash      ->   the package of rosidl_tutorials_msgs should be registered 
-	4. cd ..
-	5. cd rosidl_tutorials 
-	6. colcon build
-	7. source install/setup.bash
+	1.  cd rosidl_tutorials_msgs
+	2.  colcon build
+	3.  source install/setup.bash      ->   the package of rosidl_tutorials_msgs should be registered 
+	4.  cd ..
+	5.  cd rosidl_tutorials 
+	6.  colcon build
+	7.  source install/setup.bash
 	    	
 run:
        *publish a customized message*		
