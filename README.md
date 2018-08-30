@@ -17,7 +17,7 @@ rosidl_tutorials:     include the programs and a customzied message
 			publish_contact.cpp        ->  publish one contact
 			srv_server.cpp
 
-build and source:
+## build and source:
 1. cd rosidl_tutorials_msgs
 2. colcon build
 3. source install/setup.bash      ->   the package of rosidl_tutorials_msgs should be registered 
@@ -26,15 +26,15 @@ build and source:
 6. colcon build
 7. source install/setup.bash
 	    	
-run:
- *publish a customized message*		
+## run:
+ __*publish a customized message*__		
 1. ros2 run rosidl_tutorials publish_address_book
 2. or ros2 run rosidl_tutorials publish_contact
 3. ros2 topic list               -> there's a topic, /contact
 4. ros2 topic echo /contact      -> to check if the message is issuing
 5. or ros2 topic echo /address_book
 
-  *run a service server and client*
+  __*run a service server and client*__
 1. ros2 run rosidl_tutorials srv_server
 2. ros2 service list             -> there's a service, add_two_floats
 3. ros2 run rosidl_tutorials srv_client  -> return the result of sum of the both floats
