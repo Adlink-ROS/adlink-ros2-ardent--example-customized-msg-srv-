@@ -7,15 +7,15 @@ RMW_IMPLEMENTATION: rmw_opensplice_cpp
 
 This example shows how to create customized msg/srv based on the ROS 2 existing examples. Several bugs and issues are corrected due to the change of build tool of ROS 2. 
 
-rosidl_tutorial_msgs:  include the customized messages and services to be used by rosidl_tutorial
-		        contact.msg
-			AddTwoFloats.srv
+### rosidl_tutorial_msgs:  include the customized messages and services to be used by rosidl_tutorial
+* contact.msg
+* AddTwoFloats.srv
 
-rosidl_tutorials:     include the programs and a customzied message
-			AddressBook.msg		   ->  composed of a contact-msg-type array
-			publish_address_book.cpp   ->  publish few contacts
-			publish_contact.cpp        ->  publish one contact
-			srv_server.cpp
+### rosidl_tutorials:     include the programs and a customzied message
+* AddressBook.msg		   ->  composed of a contact-msg-type array
+* publish_address_book.cpp   ->  publish few contacts
+* publish_contact.cpp        ->  publish one contact
+* rv_server.cpp
 
 ## build and source:
 1. cd rosidl_tutorials_msgs
