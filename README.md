@@ -39,12 +39,12 @@ This example shows how to create customized msg/srv based on the ROS 2 existing 
 2. ros2 service list             -> there's a service, add_two_floats
 3. ros2 run rosidl_tutorials srv_client  -> return the result of sum of the both floats
 
-*Result of add_two_floats: 5.000000*
+  *Result of add_two_floats: 5.000000*
 
 4. or  ros2 service call /add_two_floats rosidl_tutorials_msgs/AddTwoFloats "{'a':1.0,'b':2.0}"
 
-*response:*
-*rosidl_tutorials_msgs.srv.AddTwoFloats_Response(sum=3.0)*
+  *response:*
+  *rosidl_tutorials_msgs.srv.AddTwoFloats_Response(sum=3.0)*
 
 			
 
