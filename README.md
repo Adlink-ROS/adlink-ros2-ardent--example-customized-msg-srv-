@@ -18,30 +18,30 @@ rosidl_tutorials:     include the programs and a customzied message
 			srv_server.cpp
 
 build and source:
-	1.  cd rosidl_tutorials_msgs
-	2.  colcon build
-	3.  source install/setup.bash      ->   the package of rosidl_tutorials_msgs should be registered 
-	4.  cd ..
-	5.  cd rosidl_tutorials 
-	6.  colcon build
-	7.  source install/setup.bash
+1. cd rosidl_tutorials_msgs
+2. colcon build
+3. source install/setup.bash      ->   the package of rosidl_tutorials_msgs should be registered 
+4. cd ..
+5. cd rosidl_tutorials 
+6. colcon build
+7. source install/setup.bash
 	    	
 run:
-       *publish a customized message*		
-	1. ros2 run rosidl_tutorials publish_address_book
-	2. or ros2 run rosidl_tutorials publish_contact
-	3. ros2 topic list               -> there's a topic, /contact
-	4. ros2 topic echo /contact      -> to check if the message is issuing
-	5. or ros2 topic echo /address_book
+ *publish a customized message*		
+1. ros2 run rosidl_tutorials publish_address_book
+2. or ros2 run rosidl_tutorials publish_contact
+3. ros2 topic list               -> there's a topic, /contact
+4. ros2 topic echo /contact      -> to check if the message is issuing
+5. or ros2 topic echo /address_book
 
-       *run a service server and client*
-	1. ros2 run rosidl_tutorials srv_server
-	2. ros2 service list             -> there's a service, add_two_floats
-	3. ros2 run rosidl_tutorials srv_client  -> return the result of sum of the both floats
-		Result of add_two_floats: 5.000000
-	4. or  ros2 service call /add_two_floats rosidl_tutorials_msgs/AddTwoFloats "{'a':1.0,'b':2.0}"
-		response:
-                rosidl_tutorials_msgs.srv.AddTwoFloats_Response(sum=3.0)
+  *run a service server and client*
+1. ros2 run rosidl_tutorials srv_server
+2. ros2 service list             -> there's a service, add_two_floats
+3. ros2 run rosidl_tutorials srv_client  -> return the result of sum of the both floats
+	Result of add_two_floats: 5.000000
+4. or  ros2 service call /add_two_floats rosidl_tutorials_msgs/AddTwoFloats "{'a':1.0,'b':2.0}"
+	response:
+        rosidl_tutorials_msgs.srv.AddTwoFloats_Response(sum=3.0)
 
 			
 
